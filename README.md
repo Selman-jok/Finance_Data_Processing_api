@@ -425,18 +425,10 @@ Authorization: Bearer {admin_token}
 
 
 Role-Based Access Summary Endpoint 
+Admin:can you full access
+Analyst: can see Dashboard summary ,view recoreds , updated own profile but restrictive( only name , password but not  role , status , email ) , see his own profile 
+viewer: see dashboard summary data , can see own profile and updated own profile but restrictive( only name , password but not  role , status , email )
 
-Type	Viewer	Analyst	Admin
-Dashboard Summary	✅ Full access	✅ Full access	✅ Full access
-View Records	❌ No access	✅ Read only	✅ Full access
-Create Records	❌ No access	❌ No access	✅ Yes
-Update Records	❌ No access	❌ No access	✅ Yes
-Delete Records	❌ No access	❌ No access	✅ Yes
-View Users	❌ No access	❌ No access	✅ Yes
-Create Users	❌ No access	❌ No access	✅ Yes
-Update Users	❌ No access	❌ No access	✅ Yes
-Delete Users	❌ No access	❌ No access	✅ Yes
-Update Own Profile	✅ Name & Password only	✅ Name & Password only	✅ All fields
 Expected Response Formats
 Success Response
 json
